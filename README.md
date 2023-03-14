@@ -1,2 +1,3 @@
-# Tehnologii-Web
-Proiect Footwear Smart Assistant
+## Tehnologii-Web
+#Proiect Footwear Smart Assistant
+---
