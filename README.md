@@ -1,5 +1,5 @@
 ## Tehnologii-Web
-#Proiect Footwear Smart Assistant
+Proiect Footwear Smart Assistant
 ---
 
 Nume echipa: Batman
