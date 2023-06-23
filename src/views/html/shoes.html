@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/shoes.css">
+</head>
+<body>
+<header>
+    <nav id="Home_Nav">
+        <img src="../Images/Logo/sneakers.png" alt="Logo" id="logo" onclick="openHomeContainer(0);">
+        <button class="Button_Nav" id="fav"
+                style="visibility: visible; float: right; width: 60px; display: flex; justify-content: center; align-items: center">
+            <a href="favorite.html"><img src="../Images/Icons/heart.png" style="width: 30px; margin-top: 5px"
+                                         class="icon" alt="favorite"></a>
+        </button>
+        <button class="Button_Nav" id="menu" onclick="menu();">
+            <img src="../Images/Icons/Menu.png" class="icon" alt="Menu">
+            <span class="Label_Nav">Menu</span>
+        </button>
+        <div class="search-bar">
+            <input id="searchTerm" type="text" placeholder="Search...">
+            <button type="submit"
+                    onclick="window.location.href = 'shoes.html?search=' + document.getElementById('searchTerm').value;">
+                <img src="../Images/Icons/Search.png" alt="Search">
+            </button>
+        </div>
+    </nav>
+    <div id="Menu_Container" style="visibility: hidden;">
+        <button class="Button_Menu_Container" id="shoes" onclick="openHomeContainer(4);">
+            <span class="Label_Nav">Shoe Collection</span>
+        </button>
+        <button class="Button_Menu_Container" id="news" onclick="openHomeContainer(1);">
+            <span class="Label_Nav">Delivery information</span>
+        </button>
+        <button class="Button_Menu_Container" id="profile">
+            <span class="Label_Nav">Profile</span>
+        </button>
+        <button class="Button_Menu_Container" id="about" onclick="openHomeContainer(3);">
+            <span class="Label_Nav">About</span>
+        </button>
+        <button class="Button_Menu_Container" id="contactContainer" onclick="openHomeContainer(2);">
+            <span class="Label_Nav">Contact</span>
+        </button>
+        <button class="Button_Menu_Container" id="logoutContainer" onclick="logout();">
+            <span class="Label_Nav">Logout</span>
+        </button>
+    </div>
+</header>
+<section class="home">
+    <div class="filter-section">
+        <h3 class="filter-title">Filtre:</h3>
+        <div class="filter-options">
+            <h4>Material:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="material" value="leather">Leather</label>
+            <label><input class="filter-checkbox" type="checkbox" name="material" value="suede">Suede</label>
+            <label><input class="filter-checkbox" type="checkbox" name="material" value="canvas">Canvas</label>
+            <label><input class="filter-checkbox" type="checkbox" name="material" value="synthetic">Synthetic</label>
+            <label><input class="filter-checkbox" type="checkbox" name="material" value="plastic">Plastic</label>
+
+            <h4>Color:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="black">Black</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="brown">Brown</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="white">White</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="blue">Blue</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="red">Red</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="green">Green</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="orange">Orange</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="pink">Pink</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="beige">Beige</label>
+            <label><input class="filter-checkbox" type="checkbox" name="color" value="grey">Grey</label>
+
+            <h4>Occasion:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="casual">Casual</label>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="formal">Formal</label>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="sports">Sports</label>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="party">Party</label>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="beach">Beach</label>
+            <label><input class="filter-checkbox" type="checkbox" name="occasion" value="pool">Pool</label>
+
+            <h4>Brand:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="nike">Nike</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="adidas">Adidas</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="puma">Puma</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="reebok">Reebok</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="deezee">Deezee</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="timberland">Timberland</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="vans">Vans</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="quazi">Quazi</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="guess">Guess</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="calvinklein">Calvin Klein</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="pikolinos">Pikolinos</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="geox">Geox</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="rpolanski">R.Polanski</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="evalongoria">Eva Longoria</label>
+            <label><input class="filter-checkbox" type="checkbox" name="brand" value="caterpillar">Caterpillar</label>
+
+            <h4>Type:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="sneakers">Sneakers</label>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="loafers">Loafers</label>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="heels">Heels</label>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="sandals">Sandals</label>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="boots">Boots</label>
+            <label><input class="filter-checkbox" type="checkbox" name="type" value="slippers">Slippers</label>
+
+            <h4>Size:</h4>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="35">35</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="36">36</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="37">37</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="38">38</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="39">39</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="40">40</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="41">41</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="42">42</label>
+            <label><input class="filter-checkbox" type="checkbox" name="size" value="43">43</label>
+
+        </div>
+    </div>
+</section>
+<section class="shoes">
+    <h1 class="heading"> our shoes</h1>
+    <div id="shoeList"></div>
+</section>
+<script src="../js/shoes.js"></script>
+</body>
+</html>
