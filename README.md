@@ -17,7 +17,3 @@ Componenta echipa:
     * [`src/static`](/src/static) - Elementele statice folosite in aplicatie (CSS, JS, Images, etc...)
     * [`src/views`](/src/views) - TBD: pentru componenta I pot fi paginile aplicatiei
 
-
-# Instalare
-
-Instructiuni despre cum putem instala aceasta aplicatie
