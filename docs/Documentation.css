@@ -1,0 +1,14 @@
+h2 {
+    border-bottom: 2px solid gray;
+    font-size: 30px;
+}
+
+p {
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
