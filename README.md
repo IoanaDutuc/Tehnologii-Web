@@ -7,7 +7,6 @@ Nume echipa: Batman
 Componenta echipa:
 
 * Duțuc Ioana
-* Mititelu Monica
 
 # Structura fisiere
 
