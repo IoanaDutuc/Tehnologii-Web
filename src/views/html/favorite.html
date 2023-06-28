@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favourite</title>
+    <link rel="stylesheet" href="../css/shoes.css">
+</head>
+<body>
+<header>
+    <nav id="Home_Nav">
+        <img src="../Images/Logo/sneakers.png" alt="Logo" id="logo" onclick="openHomeContainer(0);">
+        <button class="Button_Nav" id="fav" style="visibility: visible; float: right; width: 60px; display: flex; justify-content: center; align-items: center">
+            <a href="favorite.html"><img src="../Images/Icons/heart.png" style="width: 30px; margin-top: 5px" class="icon" alt="favorite"></a>
+        </button>
+        <button class="Button_Nav" id="menu" onclick="menu();">
+            <img src="../Images/Icons/Menu.png" class="icon" alt="Menu">
+            <span class="Label_Nav">Menu</span>
+        </button>
+        <div class="search-bar">
+            <input id="searchTerm" type="text" placeholder="Search...">
+            <button type="submit"
+                    onclick="window.location.href = 'shoes.html?search=' + document.getElementById('searchTerm').value;">
+                <img src="../Images/Icons/Search.png" alt="Search">
+            </button>
+        </div>
+    </nav>
+    <div id="Menu_Container" style="visibility: hidden;">
+        <button class="Button_Menu_Container" id="shoes" onclick="openHomeContainer(4);">
+            <span class="Label_Nav">Shoe Collection</span>
+        </button>
+        <button class="Button_Menu_Container" id="news" onclick="openHomeContainer(1);">
+            <span class="Label_Nav">Delivery information</span>
+        </button>
+        <button class="Button_Menu_Container" id="profile">
+            <span class="Label_Nav">Profile</span>
+        </button>
+        <button class="Button_Menu_Container" id="about" onclick="openHomeContainer(3);">
+            <span class="Label_Nav">About</span>
+        </button>
+        <button class="Button_Menu_Container" id="contactContainer" onclick="openHomeContainer(2);">
+            <span class="Label_Nav">Contact</span>
+        </button>
+        <button class="Button_Menu_Container" id="logoutContainer" onclick="logout();">
+            <span class="Label_Nav">Logout</span>
+        </button>
+    </div>
+</header>
+<section class="shoes">
+    <h1 class="heading"> our shoes</h1>
+    <div id="shoeList"></div>
+</section>
+
+<script src="../js/favorite.js"></script>
+<script src="../js/shoes.js"></script>
+</body>
+</html>
