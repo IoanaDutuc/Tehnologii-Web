@@ -1,444 +1,463 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Scholarly HTML</title>
-  <link rel="stylesheet" href="../Documentation.css">
-  <!-- <script src="js/scholarly.min.js"></script>-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scholarly HTML</title>
+    <link rel="stylesheet" href="../css/Documentation.css">
+    <!-- <script src="js/scholarly.min.js"></script>-->
 </head>
 <body>
 <header style="text-align: center;">
-  <h1>Descrierea proiectului Footwear Smart Assistant</h1>
-  <h2 style="border-bottom: none">Ioana Duțuc</h2>
-  <span typeof="schema:author">
+    <h1>Descrierea proiectului Footwear Smart Assistant</h1>
+    <h2 style="border-bottom: none">Ioana Duțuc</h2>
+    <span typeof="schema:author">
         <meta property="schema:givenName" content="Dutuc">
         <meta property="schema:familyName" content="Ioana">
     </span>
-  <time datetime="2023-06-29">July 29, 2023</time>
+    <time datetime="2023-06-29">July 29, 2023</time>
 </header>
 <main>
-  <h2>Conținut: </h2>
-  <ol>
-    <li><a href="#introduction">Introducere</a>
-      <ol start="1">
-        <li><a href="#purpose">Scop</a></li>
-        <li><a href="#documentConventions">Convenții ale documentului </a></li>
-        <li><a href="#intendedAudience">Publicul țintă </a></li>
-        <li><a href="#scope">Domeniul de aplicare al produsului</a></li>
-        <li><a href="#references">Referințe</a></li>
-      </ol>
-    </li>
-    <li><a href="#overallDescription">Descriere generală</a>
-      <ol start="1">
-        <li><a href="#productFunctions">Funcțiile produsului</a></li>
-        <li><a href="#userClasses"> Clasele și caracteristicile utilizatorilor </a></li>
-        <li><a href="#operatingEnvironment"> Mediu de operare </a></li>
-        <li><a href="#userDocumentation">Documentația utilizatorului </a></li>
-      </ol>
-    </li>
-    <li><a href="#interface">Interfață</a>
-      <ol start="1">
-        <li><a href="#userInterfaces">Interfata cu utilizatorul</a></li>
-        <li><a href="#hardwareInterfaces"> Interfețe hardware</a></li>
-        <li><a href="#softwareInterfaces">Interfețe software </a></li>
-      </ol>
-    </li>
-    <li><a href="#systemFeatures">Caracteristici ale programului </a></li>
-    <li><a href="#nonfunctionalRequirements">Alte cerințe non-funcționale</a>
-      <ol start="1">
-        <li><a href="#performance">Cerințe de performanță </a></li>
-        <li><a href="#security "> Cerințe de securitate </a></li>
-        <li><a href="#softwareAttributes">Atribute de calitate a software-ului </a></li>
-      </ol>
-    </li>
-    <li><a href="#technologies">Tehnologii folosite</a>
-  </ol>
-  <!-- ------------------------------  Introducere ------------------------------------------------------------------------------>
-  <section id="introduction" role="doc-introduction">
-    <h2>1. Introducere</h2>
-    <section id="purpose">
-      <h3>1.1 Scop:</h3>
-      <p>
-        Scopul acestui proiect este de a dezvolta un site web care să permită gestionarea informațiilor legate de
-        perechea de încălțăminte adecvată fiecărei ocazii.
-        Această aplicație trebuie să ofere utilizatorilor o interfață intuitivă pentru a gestiona datele despre
-        pantofi, inclusiv informații precum marca, tipul de încălțăminte, materialul din care este făcută perechea,
-        tipul de închidere, culoarea, tehnologiile utilizate și altele.
-      </p>
-      <p>
-        De asemenea, aplicația trebuie să ofere mecanisme de căutare și filtrare pentru a permite utilizatorilor
-        să găsească informații specifice despre perechile de papuci.
-        Aceste funcționalități ar putea include afișarea tuturor sandalelor de culoare neagră de la firma Deezee.
-      </p>
-      <p>
-        În concluzie, scopul acestui proiect este de a crea un site web eficient și ușor de utilizat, care să
-        ajute utilizatorul în alegerea perechii ideale de pantofi, să permită gestionarea informațiilor legate
-        de încălțăminte și să ofere funcționalități avansate de căutare și filtrare pentru a ajuta utilizatorii
-        să găsească informațiile de care au nevoie.
-      </p>
-    </section>
-    <section id="documentConventions">
-      <h3>1.2 Convenții ale documentului: </h3>
-      <p>
-        Culorile utilizate în document vor fi consistente cu identitatea vizuală a paginii web și cu paleta de
-        culori stabilită.
-        În cazul utilizării de nuanțe, acestea trebuie să fie în concordanță cu principalele culori și să fie
-        folosite cu moderație pentru a evita crearea unui aspect haotic.
-      </p>
-      <p>
-        Textul din document va fi de culoare neagră (în general), iar fontul utilizat va fi ușor de citit și va
-        respecta specificațiile propuse.
-        Pentru elementele interactive, cum ar fi butoanele sau link-urile, se va folosi o culoare distinctă
-        pentru a le evidenția.
-      </p>
-      <p>
-        În cazul utilizării de imagini, acestea vor fi de înaltă calitate, vor fi dimensionate corespunzător și
-        vor fi integrate armonios în designul general al documentului.
-      </p>
-      <p>
-        Convențiile privind culorile și nuanțele vor fi aplicate consistent pe întregul document, pentru a
-        menține un aspect coerent și profesional.
-      </p>
-    </section>
-    <section id="intendedAudience">
-      <h3>1.3 Publicul țintă:</h3>
-      <p>
-        Site-ul dezvoltat pentru gestionarea informațiilor despre perechi de pantofi ar putea fi utilizat de mai
-        multe categorii de utilizatori, inclusiv:
-      </p>
-      <ol>
-        <li>
-          Persoanele care doresc să vizioneze o gamă largă de opțiuni potrivite criteriilor specifice evenimentului
-          pentru care se încalță: o întâlnire formală, o nuntă extravagantă, o petrecere la piscină și multe altele.
+    <h2>Conținut: </h2>
+    <ol>
+        <li><a href="#introduction">Introducere</a>
+            <ol start="1">
+                <li><a href="#purpose">Scop</a></li>
+                <li><a href="#documentConventions">Convenții ale documentului </a></li>
+                <li><a href="#intendedAudience">Publicul țintă </a></li>
+                <li><a href="#scope">Domeniul de aplicare al produsului</a></li>
+                <li><a href="#references">Referințe</a></li>
+            </ol>
         </li>
-        <li>
-          Angajații unui magazin de încălțăminte - aceștia ar putea utiliza site-ul pentru a vedea ce informații
-          trebuie actualizate și ce informatii apar despre papuci. Astfel, le pot gestiona, in cazul in care
-          trebuie să recomande unui client un anumit tip de încălțăminte pentru o ocazie specifică sau pentru
-          un fel de tehnologie particulară.
+        <li><a href="#overallDescription">Descriere generală</a>
+            <ol start="1">
+                <li><a href="#productFunctions">Funcțiile produsului</a></li>
+                <li><a href="#userClasses"> Clasele și caracteristicile utilizatorilor </a></li>
+                <li><a href="#operatingEnvironment"> Mediu de operare </a></li>
+                <li><a href="#userDocumentation">Documentația utilizatorului </a></li>
+            </ol>
         </li>
-      </ol>
-      <p>
-        În general, site-ul ar putea fi utilizat de oricine este interesat de încălțăminte și de gestionarea
-        informațiilor despre aceasta.
-      </p>
+        <li><a href="#interface">Interfață</a>
+            <ol start="1">
+                <li><a href="#userInterfaces">Interfata cu utilizatorul</a></li>
+                <li><a href="#hardwareInterfaces"> Interfețe hardware</a></li>
+                <li><a href="#softwareInterfaces">Interfețe software </a></li>
+            </ol>
+        </li>
+        <li><a href="#systemFeatures">Caracteristici ale programului </a></li>
+        <li><a href="#nonfunctionalRequirements">Alte cerințe non-funcționale</a>
+            <ol start="1">
+                <li><a href="#performance">Cerințe de performanță </a></li>
+                <li><a href="#security "> Cerințe de securitate </a></li>
+                <li><a href="#softwareAttributes">Atribute de calitate a software-ului </a></li>
+            </ol>
+        </li>
+        <li><a href="#technologies">Tehnologii folosite</a>
+    </ol>
+    <!-- ------------------------------  Introducere ------------------------------------------------------------------------------>
+    <section id="introduction" role="doc-introduction">
+        <h2>1. Introducere</h2>
+        <section id="purpose">
+            <h3>1.1 Scop:</h3>
+            <p>
+                Scopul acestui proiect este de a dezvolta un site web care să permită gestionarea informațiilor legate de
+                perechea de încălțăminte adecvată fiecărei ocazii.
+                Această aplicație trebuie să ofere utilizatorilor o interfață intuitivă pentru a gestiona datele despre
+                pantofi, inclusiv informații precum marca, tipul de încălțăminte, materialul din care este făcută perechea,
+                tipul de închidere, culoarea, tehnologiile utilizate și altele.
+            </p>
+            <p>
+                De asemenea, aplicația trebuie să ofere mecanisme de căutare și filtrare pentru a permite utilizatorilor
+                să găsească informații specifice despre perechile de papuci.
+                Aceste funcționalități ar putea include afișarea tuturor sandalelor de culoare neagră de la firma Deezee.
+            </p>
+            <p>
+                În concluzie, scopul acestui proiect este de a crea un site web eficient și ușor de utilizat, care să
+                ajute utilizatorul în alegerea perechii ideale de pantofi, să permită gestionarea informațiilor legate
+                de încălțăminte și să ofere funcționalități avansate de căutare și filtrare pentru a ajuta utilizatorii
+                să găsească informațiile de care au nevoie.
+            </p>
+        </section>
+        <section id="documentConventions">
+            <h3>1.2 Convenții ale documentului: </h3>
+            <p>
+                Culorile utilizate în document vor fi consistente cu identitatea vizuală a paginii web și cu paleta de
+                culori stabilită.
+                În cazul utilizării de nuanțe, acestea trebuie să fie în concordanță cu principalele culori și să fie
+                folosite cu moderație pentru a evita crearea unui aspect haotic.
+            </p>
+            <p>
+                Textul din document va fi de culoare neagră (în general), iar fontul utilizat va fi ușor de citit și va
+                respecta specificațiile propuse.
+                Pentru elementele interactive, cum ar fi butoanele sau link-urile, se va folosi o culoare distinctă
+                pentru a le evidenția.
+            </p>
+            <p>
+                În cazul utilizării de imagini, acestea vor fi de înaltă calitate, vor fi dimensionate corespunzător și
+                vor fi integrate armonios în designul general al documentului.
+            </p>
+            <p>
+                Convențiile privind culorile și nuanțele vor fi aplicate consistent pe întregul document, pentru a
+                menține un aspect coerent și profesional.
+            </p>
+        </section>
+        <section id="intendedAudience">
+            <h3>1.3 Publicul țintă:</h3>
+            <p>
+                Site-ul dezvoltat pentru gestionarea informațiilor despre perechi de pantofi ar putea fi utilizat de mai
+                multe categorii de utilizatori, inclusiv:
+            </p>
+            <ol>
+                <li>
+                    Persoanele care doresc să vizioneze o gamă largă de opțiuni potrivite criteriilor specifice evenimentului
+                    pentru care se încalță: o întâlnire formală, o nuntă extravagantă, o petrecere la piscină și multe altele.
+                </li>
+                <li>
+                    Angajații unui magazin de încălțăminte - aceștia ar putea utiliza site-ul pentru a vedea ce informații
+                    trebuie actualizate și ce informatii apar despre papuci. Astfel, le pot gestiona, in cazul in care
+                    trebuie să recomande unui client un anumit tip de încălțăminte pentru o ocazie specifică sau pentru
+                    un fel de tehnologie particulară.
+                </li>
+            </ol>
+            <p>
+                În general, site-ul ar putea fi utilizat de oricine este interesat de încălțăminte și de gestionarea
+                informațiilor despre aceasta.
+            </p>
+        </section>
+        <section id="scope">
+            <h3>1.4 Domeniul de aplicare al produsului: </h3>
+            <p>
+                Domeniul de aplicare a produsului poate fi vast și poate acoperi o gamă largă de utilizatori și nevoi.
+                În ceea ce priveste magazinele de pantofi, produsul poate fi utilizat de angajații acestora pentru a
+                gestiona informațiile despre pantofi și pentru a oferi clienților informații utile și interesante
+                despre acestea.
+            </p>
+        </section>
+        <section id="references">
+            <h3>1.5 Referințe: </h3>
+            <p>
+                În alegerea modului în care site-ul va arăta au fost implicați mai mulți pași. Am început prin a
+                mă gandi cum aș vrea să arate și ce funcționalități să ofere. Ulterior am căutat pe internet
+                site-uri ale multor magazine de încălțăminte pentru a vedea ce informații oferă și dacă există un mod standard
+                în care acestea arată. După ce mi-am făcut o imagine cu modul în care aș dori să arate aplicația
+                am continuat prin a desena pe foi modul în care doresc să arate.
+            </p>
+            <p>
+                O parte dintre paginile de încălțăminte pe care le-am analizat sunt:
+            </p>
+            <ul>
+                <li typeof="schema:WebPage"><a href="https://epantofi.ro">epantofi</a></li>
+                <li typeof="schema:WebPage"><a href="https://www.aboutyou.ro">About You</a></li>
+                <li typeof="schema:WebPage"><a href="https://answear.ro">Answear</a></li>
+            </ul>
+        </section>
     </section>
-    <section id="scope">
-      <h3>1.4 Domeniul de aplicare al produsului: </h3>
-      <p>
-        Domeniul de aplicare a produsului poate fi vast și poate acoperi o gamă largă de utilizatori și nevoi.
-        În ceea ce priveste magazinele de pantofi, produsul poate fi utilizat de angajații acestora pentru a
-        gestiona informațiile despre pantofi și pentru a oferi clienților informații utile și interesante
-        despre acestea.
-      </p>
+    <!------------------------------------------Descriere generală -------------------------------------------->
+    <section id="overallDescription">
+        <h2>2. Descriere generală</h2>
+        <section id="productFunctions">
+            <h3>2.1 Funcțiile produsului: </h3>
+            <ul>
+                <li>
+                    Căutare și filtrare - permit utilizatorilor să caute și să filtreze pantofii în funcție de diferite
+                    criterii, cum ar fi brand-ul, materialul din care sunt confecționați, culoarea, tipul de încălțăminte,
+                    tipul de închidere, tehnologiile utilizate și altele.
+                </li>
+                <li>
+                    Vizualizare informații despre papuci - utilizatorii pot vizualiza informații detaliate despre
+                    fiecare pereche de papuci, inclusiv denumirea, brand-ul, tipul de încălțăminte, materialul din
+                    care sunt confecționați, ocazia potrivită pentru a fi purtați, culoarea, tipul de închidere,
+                    tehnologiile utilizate și imagini de interes.
+                </li>
+                <li>
+                    Vizualizare informatii fictive despre: contact, servicii de livrare oferite și o rubrica de
+                    about us.
+                </li>
+                <li>
+                    Vizualizare și modificare informații personale - utilizatorii vor putea vedea la rubrica profil
+                    informațiile personale și le vor putea actualiza.
+                </li>
+            </ul>
+        </section>
+        <section id="userClasses">
+            <h3>2.2 Clasele și caracteristicile utilizatorilor: </h3>
+            <p>
+                În această aplicație există un singur fel de cont: contul utilizatorului.
+            </p>
+            <p>
+                Contul utilizatorului:
+            </p>
+            <ul>
+                <li>
+                    Utilizatorii pot accesa aplicația și pot vizualiza lista de perechi de papuci disponibile.
+                </li>
+                <li>
+                    Ei pot vizualiza informații detaliate despre fiecare pereche, cum ar fi numele, fotografia,
+                    brand-ul, tipul de încălțăminte, ocazia, culoarea, tipul de închidere și tehnologiile utilizate.
+                </li>
+                <li>
+                    Utilizatorii pot adăuga o pereche de pantofi în lista lor personală de "favorite".
+                </li>
+                <li>
+                    Utilizatorii nu au dreptul de a adăuga, edita sau șterge pantofii din sistem.
+                </li>
+            </ul>
+        </section>
+        <section id="operatingEnvironment">
+            <h3>2.3 Mediu de operare: </h3>
+            <p>
+                Mediile de operare ale acestui proiect include:
+            </p>
+            <ul>
+                <li>Sistem de operare: Windows</li>
+                <li>Pentru serverul web: Node.js</li>
+                <li>Baze de date: MySQL</li>
+                <li>Limbaje de programare: HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
+        <section id="userDocumentation">
+            <h3>2.4 Documentația utilizatorului: </h3>
+            <p>
+                Site-ul este gândit atractiv și simplu de utilizat. Nu pot fi cumpărate produse prin intermediul acestui site.
+                Astfel, nu este nevoie de un manual sau on-line help pentru ca userul să folosească această pagină web.
+            </p>
+        </section>
     </section>
-    <section id="references">
-      <h3>1.5 Referințe: </h3>
-      <p>
-        În alegerea modului în care site-ul va arăta au fost implicați mai mulți pași. Am început prin a
-        mă gandi cum aș vrea să arate și ce funcționalități să ofere. Ulterior am căutat pe internet
-        site-uri ale multor magazine de încălțăminte pentru a vedea ce informații oferă și dacă există un mod standard
-        în care acestea arată. După ce mi-am făcut o imagine cu modul în care aș dori să arate aplicația
-        am continuat prin a desena pe foi modul în care doresc să arate.
-      </p>
-      <p>
-        O parte dintre paginile de încălțăminte pe care le-am analizat sunt:
-      </p>
-      <ul>
-        <li typeof="schema:WebPage"><a href="https://epantofi.ro">epantofi</a></li>
-        <li typeof="schema:WebPage"><a href="https://www.aboutyou.ro">About You</a></li>
-        <li typeof="schema:WebPage"><a href="https://answear.ro">Answear</a></li>
-      </ul>
+    <!---------------------------------------------- Interfata ------------------------------------------------------->
+    <section id="interface">
+        <h2>3. Interfață</h2>
+        <section id="userInterfaces">
+            <h3>3.1 Interfața cu utilizatorul</h3>
+            <p>
+                Interfața cu utilizatorul este intuitivă și atractivă și are o gamă largă de caracteristici pentru ca
+                utilizatorii să poată găsi ușor informațiile căutate. Inițial utilizatorului i se va deschide pagina
+                pentru login/sign up. Home-ul (pagina de după autentificare) va avea ca fundal imaginea unui Nike Jordan Air
+                și un mesaj de întampinare a utilizatorului. În partea de sus, în funcție de device, se vor găsi butoane de
+                meniu, favorite și altele pentru a permite utilizatorilor să exploreze diferite secțiuni ale site-ului.
+            </p>
+        </section>
+        <section id="hardwareInterfaces">
+            <h3>3.2 Interfețe hardware</h3>
+            <p>
+                Site-ul este responsive. Aspectul se modifică in funcție de device. Acesta poate fi deschis pe tabletă,
+                telefon sau laptop și trăsăturile au fost gândite pentru a fi atractiv și ușor de utilizat pe oricare
+                dintre aceste trei device-uri.
+            </p>
+        </section>
+        <section id="softwareInterfaces">
+            <h3>3.3 Interfețe software </h3>
+            <p>
+                Vom folosi o bază de date pentru a reține informațiile despre utilizatori. Aceasta este folosită la:
+            </p>
+            <ul>
+                <li> Sign up - când se adăuga un user nou în baza de date</li>
+                <li> Login - când se va căuta utilizatorul în baza de date pentru a se verifica faptul că există</li>
+                <li> Logout - pentru a știi că utilizatorul nu mai este logat.</li>
+                <li> Profil - pentru a face toate funcționalitățile posibile pe pagina de profil.</li>
+            </ul>
+            <p>
+                Pentru pantofi vom folosi tot baza de date. Avem un tabel unde am adăugat datele despre papuci. Pe baza
+                acestuia se fac toate funcționalitățile necesare ce țin de încălțăminte.
+            </p>
+        </section>
     </section>
-  </section>
-  <!------------------------------------------Descriere generală -------------------------------------------->
-  <section id="overallDescription">
-    <h2>2. Descriere generală</h2>
-    <section id="productFunctions">
-      <h3>2.1 Funcțiile produsului: </h3>
-      <ul>
-        <li>
-          Căutare și filtrare - permit utilizatorilor să caute și să filtreze pantofii în funcție de diferite
-          criterii, cum ar fi brand-ul, materialul din care sunt confecționați, culoarea, tipul de încălțăminte,
-          tipul de închidere, tehnologiile utilizate și altele.
-        </li>
-        <li>
-          Vizualizare informații despre papuci - utilizatorii pot vizualiza informații detaliate despre
-          fiecare pereche de papuci, inclusiv denumirea, brand-ul, tipul de încălțăminte, materialul din
-          care sunt confecționați, ocazia potrivită pentru a fi purtați, culoarea, tipul de închidere,
-          tehnologiile utilizate și imagini de interes.
-        </li>
-        <li>
-          Vizualizare informatii fictive despre: contact, servicii de livrare oferite și o rubrica de
-          about us.
-        </li>
-        <li>
-          Vizualizare și modificare informații personale - utilizatorii vor putea vedea la rubrica profil
-          informațiile personale și le vor putea actualiza.
-        </li>
-      </ul>
-    </section>
-    <section id="userClasses">
-      <h3>2.2 Clasele și caracteristicile utilizatorilor: </h3>
-      <p>
-        În această aplicație există un singur fel de cont: contul utilizatorului.
-      </p>
-      <p>
-        Contul utilizatorului:
-      </p>
-      <ul>
-        <li>
-          Utilizatorii pot accesa aplicația și pot vizualiza lista de perechi de papuci disponibile.
-        </li>
-        <li>
-          Ei pot vizualiza informații detaliate despre fiecare pereche, cum ar fi numele, fotografia,
-          brand-ul, tipul de încălțăminte, ocazia, culoarea, tipul de închidere și tehnologiile utilizate.
-        </li>
-        <li>
-          Utilizatorii pot adăuga o pereche de pantofi în lista lor personală de "favorite".
-        </li>
-        <li>
-          Utilizatorii nu au dreptul de a adăuga, edita sau șterge pantofii din sistem.
-        </li>
-      </ul>
-    </section>
-    <section id="operatingEnvironment">
-      <h3>2.3 Mediu de operare: </h3>
-      <p>
-        Mediile de operare ale acestui proiect include:
-      </p>
-      <ul>
-        <li>Sistem de operare: Windows</li>
-        <li>Pentru serverul web: Node.js</li>
-        <li>Baze de date: MySQL</li>
-        <li>Limbaje de programare: HTML, CSS, JavaScript</li>
-      </ul>
-    </section>
-    <section id="userDocumentation">
-      <h3>2.4 Documentația utilizatorului: </h3>
-      <p>
-        Site-ul este gândit atractiv și simplu de utilizat. Nu pot fi cumpărate produse prin intermediul acestui site.
-        Astfel, nu este nevoie de un manual sau on-line help pentru ca userul să folosească această pagină web.
-      </p>
-    </section>
-  </section>
-  <!---------------------------------------------- Interfata ------------------------------------------------------->
-  <section id="interface">
-    <h2>3. Interfață</h2>
-    <section id="userInterfaces">
-      <h3>3.1 Interfața cu utilizatorul</h3>
-      <p>
-        Interfața cu utilizatorul este intuitivă și atractivă și are o gamă largă de caracteristici pentru ca
-        utilizatorii să poată găsi ușor informațiile căutate. Inițial utilizatorului i se va deschide pagina
-        pentru login/sign up. Home-ul (pagina de după autentificare) va avea ca fundal imaginea unui Nike Jordan Air
-        și un mesaj de întampinare a utilizatorului. În partea de sus, în funcție de device, se vor găsi butoane de
-        meniu, favorite și altele pentru a permite utilizatorilor să exploreze diferite secțiuni ale site-ului.
-      </p>
-    </section>
-    <section id="hardwareInterfaces">
-      <h3>3.2 Interfețe hardware</h3>
-      <p>
-        Site-ul este responsive. Aspectul se modifică in funcție de device. Acesta poate fi deschis pe tabletă,
-        telefon sau laptop și trăsăturile au fost gândite pentru a fi atractiv și ușor de utilizat pe oricare
-        dintre aceste trei device-uri.
-      </p>
-    </section>
-    <section id="softwareInterfaces">
-      <h3>3.3 Interfețe software </h3>
-      <p>
-        Vom folosi o bază de date pentru a reține informațiile despre utilizatori. Aceasta este folosită la:
-      </p>
-      <ul>
-        <li> Sign up - când se adăuga un user nou în baza de date</li>
-        <li> Login - când se va căuta utilizatorul în baza de date pentru a se verifica faptul că există</li>
-        <li> Logout - pentru a știi că utilizatorul nu mai este logat.</li>
-        <li> Profil - pentru a face toate funcționalitățile posibile pe pagina de profil.</li>
-      </ul>
-      <p>
-        Pentru pantofi vom folosi tot baza de date. Avem un tabel unde am adăugat datele despre papuci. Pe baza
-        acestuia se fac toate funcționalitățile necesare ce țin de încălțăminte.
-      </p>
-    </section>
-  </section>
-  <!--------------------------------------------------- Caracteristici ale sistemului ----------------------------------------------------------->
-  <section id="systemFeatures">
-    <h2>4. Caracteristici ale programului </h2>
-    <p>
-      Utilizatorul va intra pe o pagină principală, unde se va putea loga/ își va putea face cont.
-      După ce autentificarea se realizează cu succes, se va deschide home page-ul. În partea de sus se vor găsi
-      butoane ce vor trimite la diferite secțiuni.
-    </p>
-    <p>
-      Meniul de pe desktop, tabletă și telefon conține butoane către:
-    <ul>
-      <li>Colecția de pantofi</li>
-      <li>Informații legate de livrare</li>
-      <li>Profil</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Logout</li>
-  </ul>
-    <P>
-      Când se apasă butonul de profil, se deschide o pagină cu datele utilizatorului. Aici fiecare user își poate
-      modifica datele.
-    </P>
-    <p>
-      Butonul de colectie de pantofi afișează totalitatea perechilor de pantofi existente. Pentru o căutare mai
-      avansată, utilizatorul se poate folosi de bara de căutare de deasupra paginii sau de bara de filtre din
-      stânga paginii.
-    </p>
-  </section>
-  <!---------------------------------------------- Cerințe non-funcționale ------------------------------------------------------------------>
-  <section id="nonfunctionalRequirements">
-    <h2>5. Alte cerințe non-funcționale</h2>
-    <section id="performance">
-      <h3>5.1 Cerințe de performanță </h3>
-      <p>
-        Pagina se va încărca rapid pentru a oferi o experientă cât mai bună utilizatorilor. Trecerea de
-        la o pagina la alta este făcută într-un mod optim, astfel încât durata de transfer de la o pagină la alta
-        să fie cât mai redusă.
-      </p>
-    </section>
-    <section id="security ">
-      <h3>5.2 Cerințe de securitate </h3>
-      <p>
-        Pentru a asigura o securitate adecvată a datelor utilizatorilor, este esențial să se respecte practicile
-        recomandate de industrie. În acest sens, una dintre cele mai importante practici este aceea de a ține
-        informațiile despre utilizatori exclusiv în backend-ul aplicației, și nu în frontend-ul care este expus
-        utilizatorilor.
-      </p>
-      <p>
-        Prin păstrarea datelor de utilizator exclusiv în backend, se poate reduce riscul de acces neautorizat la
-        informațiile utilizatorilor, deoarece acestea nu sunt disponibile publicului larg și nu pot fi accesate
-        direct prin intermediul interfeței utilizatorului.
-      </p>
-      <p>
-        De asemenea, păstrarea datelor în backend permite o mai bună gestiune și control asupra acestora,
-        oferind posibilitatea de a aplica reguli stricte de securitate și de a gestiona accesul la informații în
-        funcție de permisiunile utilizatorilor.
-      </p>
-    </section>
-    <section id="softwareAttributes">
-      <h3>5.3 Atribute de calitate a software-ului </h3>
-      <ul>
-        <li>
-          Funcționalitate: Site-ul are capacitatea de a gestiona informațiile despre încălțăminte,
-          precum și de a oferi mecanisme de căutare/filtrare.
-        </li>
-        <li> Fiabilitate: Site-ul va funcționa fără erori sau defecte.</li>
-        <li>
-          Performanța: Site-ul va răspunde rapid la cererile utilizatorilor și de a oferi o experiență
-          fluidă.
-        </li>
-        <li>
-          Uzabilitate: Site-ul este ușor de utilizat și de a fi înțeles de către utilizatori și oferă o
-          interfață atractivă și intuitivă.
-        </li>
-        <li>
-          Securitate: Site-ul va proteja datele utilizatorilor și va preveni accesul neautorizat la
-          acestea.
-        </li>
-        <li>
-          Scalabilitate: Capacitatea aplicației de a fi utilizată pe o scală largă și de a putea fi extinsă
-          fără probleme.
-        </li>
-      </ul>
-    </section>
-  </section>
-  <!---------------------------------------------- Tehnologii utilizate ------------------------------------------------------------------>
-  <section id="technologies">
-    <h2>6. Tehnologii utilizate</h2>
-    <ul>
-      <li>
-        Pentru: Login/ Sign Up <br>
+    <!--------------------------------------------------- Caracteristici ale sistemului ----------------------------------------------------------->
+    <section id="systemFeatures">
+        <h2>4. Caracteristici ale programului </h2>
+        <p>
+            Utilizatorul va intra pe o pagină principală, unde se va putea loga/ își va putea face cont.
+            După ce autentificarea se realizează cu succes, se va deschide home page-ul. În partea de sus se vor găsi
+            butoane ce vor trimite la diferite secțiuni.
+        </p>
+        <p>
+            Meniul de pe desktop, tabletă și telefon conține butoane către:
         <ul>
-          <li>
-            Endpoint: http://localhost:8081/auth<br>
-            Metoda folosită: POST<br>
-            Justificare: trimitem ce completează userul (datele de conectare + "login"/"sign up" în funcție
-            de ceea
-            ce încearcă utilizatorul să facă) și primim înapoi un token dacă logarea/sign up-ul e reușit. În
-            caz contrar, avem mesaje de eroare.
-          </li>
+            <li>Colecția de pantofi</li>
+            <li>Informații legate de livrare</li>
+            <li>Profil</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Logout</li>
         </ul>
-      </li>
-      <li>
-        Pentru: Profil<br>
+        <P>
+            Când se apasă butonul de profil, se deschide o pagină cu datele utilizatorului. Aici fiecare user își poate
+            modifica datele.
+        </P>
+        <p>
+            Butonul de colectie de pantofi afișează totalitatea perechilor de pantofi existente. Pentru o căutare mai
+            avansată, utilizatorul se poate folosi de bara de căutare de deasupra paginii sau de bara de filtre din
+            stânga paginii.
+        </p>
+    </section>
+    <!---------------------------------------------- Cerințe non-funcționale ------------------------------------------------------------------>
+    <section id="nonfunctionalRequirements">
+        <h2>5. Alte cerințe non-funcționale</h2>
+        <section id="performance">
+            <h3>5.1 Cerințe de performanță </h3>
+            <p>
+                Pagina se va încărca rapid pentru a oferi o experientă cât mai bună utilizatorilor. Trecerea de
+                la o pagina la alta este făcută într-un mod optim, astfel încât durata de transfer de la o pagină la alta
+                să fie cât mai redusă.
+            </p>
+        </section>
+        <section id="security ">
+            <h3>5.2 Cerințe de securitate </h3>
+            <p>
+                Pentru a asigura o securitate adecvată a datelor utilizatorilor, este esențial să se respecte practicile
+                recomandate de industrie. În acest sens, una dintre cele mai importante practici este aceea de a ține
+                informațiile despre utilizatori exclusiv în backend-ul aplicației, și nu în frontend-ul care este expus
+                utilizatorilor.
+            </p>
+            <p>
+                Prin păstrarea datelor de utilizator exclusiv în backend, se poate reduce riscul de acces neautorizat la
+                informațiile utilizatorilor, deoarece acestea nu sunt disponibile publicului larg și nu pot fi accesate
+                direct prin intermediul interfeței utilizatorului.
+            </p>
+            <p>
+                De asemenea, păstrarea datelor în backend permite o mai bună gestiune și control asupra acestora,
+                oferind posibilitatea de a aplica reguli stricte de securitate și de a gestiona accesul la informații în
+                funcție de permisiunile utilizatorilor.
+            </p>
+        </section>
+        <section id="softwareAttributes">
+            <h3>5.3 Atribute de calitate a software-ului </h3>
+            <ul>
+                <li>
+                    Funcționalitate: Site-ul are capacitatea de a gestiona informațiile despre încălțăminte,
+                    precum și de a oferi mecanisme de căutare/filtrare.
+                </li>
+                <li> Fiabilitate: Site-ul va funcționa fără erori sau defecte.</li>
+                <li>
+                    Performanța: Site-ul va răspunde rapid la cererile utilizatorilor și de a oferi o experiență
+                    fluidă.
+                </li>
+                <li>
+                    Uzabilitate: Site-ul este ușor de utilizat și de a fi înțeles de către utilizatori și oferă o
+                    interfață atractivă și intuitivă.
+                </li>
+                <li>
+                    Securitate: Site-ul va proteja datele utilizatorilor și va preveni accesul neautorizat la
+                    acestea.
+                </li>
+                <li>
+                    Scalabilitate: Capacitatea aplicației de a fi utilizată pe o scală largă și de a putea fi extinsă
+                    fără probleme.
+                </li>
+            </ul>
+        </section>
+    </section>
+    <!---------------------------------------------- Tehnologii utilizate ------------------------------------------------------------------>
+    <section id="technologies">
+        <h2>6. Tehnologii utilizate</h2>
         <ul>
-          <li>
-            Endpoint: http://localhost:8081/profile/ <br>
-            Metoda: POST <br>
-            Justificare: pentru a încărca datele utilizatorului. Trimitem emailul salvat în local storage și
-            primim
-            datele lui pentru a le afișa. <br><br>
-          </li>
+            <li>
+                Pentru: Login/ Sign Up <br>
+                <ul>
+                    <li>
+                        Endpoint: http://localhost:8081/auth<br>
+                        Metoda folosită: POST<br>
+                        Justificare: trimitem ce completează userul (datele de conectare + "login"/"sign up" în funcție
+                        de ceea ce încearcă utilizatorul să facă) și primim înapoi un token dacă logarea/sign up-ul e
+                        reușit. În caz contrar, avem mesaje de eroare.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru: Profil<br>
+                <ul>
+                    <li>
+                        Endpoint: http://localhost:8081/profile/ <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a încărca datele utilizatorului. Trimitem emailul salvat în local storage și
+                        primim datele lui pentru a le afișa. <br><br>
+                    </li>
 
-          <li> Endpoint: http://localhost:8081/profileEdit/ <br>
-            Metoda: PUT <br>
-            Justificare: pentru a trimite către server ce date dorește userul să modifice la profilul lui.
-            Serverul
-            modifică baza de date cu noile informații. <br><br>
-          </li>
-          <li>
-            Endpoint: http://localhost:8081/profilePassword/ <br>
-            Metoda: PUT <br>
-            Justificare: pentru a trimite informații despre noua parolă a userului. Pe partea de server se
-            verifică
-            dacă parola veche este cea corectă, iar dacă parola nouă a fost introdusă de două ori la fel ea
-            va fi adăugată în baza de date. <br><br>
-          </li>
-          <li>
-            Endpoint: http://localhost:8081/profileDelete/ <br>
-            Metoda: DELETE <br>
-            Justificare: pentru a trimite cererea ca userul să fie șters din baza de date.
-          </li>
+                    <li> Endpoint: http://localhost:8081/profileEdit/ <br>
+                        Metoda: PUT <br>
+                        Justificare: pentru a trimite către server ce date dorește userul să modifice la profilul lui.
+                        Serverul modifică baza de date cu noile informații. <br><br>
+                    </li>
+                    <li>
+                        Endpoint: http://localhost:8081/profilePassword/ <br>
+                        Metoda: PUT <br>
+                        Justificare: pentru a trimite informații despre noua parolă a userului. Pe partea de server se
+                        verifică dacă parola veche este cea corectă, iar dacă parola nouă a fost introdusă de două ori
+                        la fel ea va fi adăugată în baza de date. <br><br>
+                    </li>
+                    <li>
+                        Endpoint: http://localhost:8081/profileDelete/ <br>
+                        Metoda: DELETE <br>
+                        Justificare: pentru a trimite cererea ca userul să fie șters din baza de date.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru: Papuci<br>
+                <ul>
+                    <li>
+                        Endpoint: http://localhost:8081/shoes/ <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a încărca datele despre încălțăminte (poza și numele) pe pagina cu toate
+                        perechile de pantofi. <br><br>
+                    </li>
+                    <li>
+                        Endpoint: http://localhost:8081/shoe/favorite/ <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a adăuga datele unei perechi de pantofi (id-ul) și datele utilizatorului
+                        (emailul) în tabela de favorite din baza de date. <br><br>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru: Pagina unei perechi de pantofi<br>
+                <ul>
+                    <li>
+                        Endpoint: http://localhost:8081/shoe/ + id <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a încărca datele despre fiecare pereche de pantofi în parte. <br><br>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru: Search<br>
+                <ul>
+                    <li>
+                        Endpoint: "http://localhost:8081/search/" + term <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a încărca datele despre pantofii care conțin în nume/în descriere ceea ce
+                        scriem noi la search. <br><br>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru: Filtre<br>
+                <ul>
+                    <li>
+                        Endpoint: "http://localhost:8081/filter/" + term <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a filtra pantofii după anumite categorii. <br><br>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Pentru:  Pagina de Favorite<br>
+                <ul>
+                    <li>
+                        Endpoint: http://localhost:8081/shoes/favorite/page/ <br>
+                        Metoda: POST <br>
+                        Justificare: pentru a încărca datele pantofilor preferați ai utilizatorului. Trimitem emailul
+                        salvat în local storage și primim datele perechilor preferate de acesta pentru a le afișa. <br><br>
+                    </li>
+
+                    <li> Endpoint: http://localhost:8081/shoe/favorite/delete/ <br>
+                        Metoda: DELETE <br>
+                        Justificare: pentru a trimite cererea ca o pereche de pantofi din lista de preferințe a
+                        utilizatorului să fie ștearsă din baza de date. <br><br>
+                    </li>
+                </ul>
+            </li>
         </ul>
-      </li>
-      <li>
-        Pentru: Papuci<br>
-        <ul>
-          <li>
-            Endpoint: http://localhost:8081/shoes/ <br>
-            Metoda: POST <br>
-            Justificare: pentru a încărca datele despre încălțăminte (poza și numele) pe pagina cu toate
-            perechile de pantofi. <br><br>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Pentru: Pagina unei perechi de pantofi<br>
-        <ul>
-          <li>
-            Endpoint: http://localhost:8081/shoe/ + id <br>
-            Metoda: POST <br>
-            Justificare: pentru a încărca datele despre fiecare pereche de pantofi în parte. <br><br>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Pentru: Search<br>
-        <ul>
-          <li>
-            Endpoint: "http://localhost:8081/search/" + term <br>
-            Metoda: POST <br>
-            Justificare: pentru a încărca datele despre pantofii care conțin în nume/în descriere ceea ce
-            scriem noi la search. <br><br>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Pentru: Filtre<br>
-        <ul>
-          <li>
-            Endpoint: "http://localhost:8081/filter/" + term <br>
-            Metoda: POST <br>
-            Justificare: pentru a filtra pantofii după anumite categorii. <br><br>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+    </section>
 </main>
 </body>
 </html>
